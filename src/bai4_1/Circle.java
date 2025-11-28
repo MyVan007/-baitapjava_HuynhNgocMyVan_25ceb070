@@ -1,11 +1,13 @@
 package bai4_1;
 
-public class Circle {
+import bai6_1.Shape;
+
+public class Circle extends Shape {
     private double radius;
     private String color;
 
 
-    public Circle(double radius) {
+    public Circle(double radius, String red, boolean b) {
         this.radius = radius;
     }
 
@@ -34,10 +36,17 @@ public class Circle {
     }
 
     @Override
+    public double getPerimeter() {
+        return 0;
+    }
+
+    @Override
     public String toString() {
         return "Circle{" +
                 "radius=" + radius +
                 ", color='" + color + '\'' +
                 '}';
     }
+
+
 }
